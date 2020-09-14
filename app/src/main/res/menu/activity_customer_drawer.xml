@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/category"
+            android:title="@string/menu_branshes" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homes"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_ads"
+            android:icon="@drawable/ads"
+            android:title="@string/menu_ads" />
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/offers"
+            android:title="@string/menu_discounts" />
+        <item
+            android:id="@+id/nav_used"
+            android:icon="@drawable/used"
+            android:title="@string/menu_used" />
+        <item
+            android:id="@+id/nav_real_estates"
+            android:icon="@drawable/hmoerent"
+            android:title="@string/menu_real_estates" />
+        <item
+            android:id="@+id/nav_jobs"
+            android:icon="@drawable/ic_jobs"
+            android:title="@string/menu_jobs" />
+        <item
+            android:id="@+id/nav_doctors"
+            android:icon="@drawable/ic_doctors"
+            android:title="@string/menu_doctors" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/menu_maps" />
+        <item
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/ic_delivery"
+            android:title="@string/menu_delivery" />
+        <item
+            android:id="@+id/nav_channel"
+            android:icon="@drawable/youtube"
+            android:title="@string/menu_youtube" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/contact_us"
+            android:title="@string/menu_contact_us" />
+
+    </group>
+</menu>

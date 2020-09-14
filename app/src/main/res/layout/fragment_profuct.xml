@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.fragments.ProductFragment"
+        android:id="@+id/product_container">
+
+        <com.algamil.souqelwasta.customLibraries.GridRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_Products"
+            android:layout_below="@+id/app_bar"
+            tools:listitem="@layout/item_recycler_view"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            >
+
+        </com.algamil.souqelwasta.customLibraries.GridRecyclerView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_20sdp"
+            android:id="@+id/progress_loader_product"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/white"
+            >
+
+            <ProgressBar
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/im_no_result"
+                android:layout_width="245dp"
+                android:layout_height="268dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/no_result"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/recycler_markets"
+                app:layout_constraintEnd_toEndOf="@+id/recycler_markets"
+                app:layout_constraintHorizontal_bias="0.404"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="320dp"
+                android:text="@string/no_product"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="invisible"
+                android:id="@+id/text_market"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/recycler_markets"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.48000002" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

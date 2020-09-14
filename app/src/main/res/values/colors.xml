@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="whats_app">#36F436</color>
+    <color name="purple">#850CE1</color>
+    <color name="linked">#2196F3</color>
+
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorPrimaryDark">#003C8F</color>
+    <color name="colorAccent">#5E92F3</color>
+    <color name="facebook">#3F51B5</color>
+    <color name="twitter">#03A9F4</color>
+    <color name="white">#ffffff</color>
+
+    <color name="black">#13233D</color>
+    <color name="orange">#FCBC72</color>
+    <color name="gray">#474747</color>
+    <color name="colorTransparent">#00000000</color>
+</resources>

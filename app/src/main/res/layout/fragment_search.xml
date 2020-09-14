@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:id="@+id/container"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im_view"
+                android:layout_width="287dp"
+                android:layout_height="319dp"
+                android:src="@drawable/not_found"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.356" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginTop="456dp"
+                android:text="@string/no_result_search"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:id="@+id/text_search"
+                app:layout_constraintBottom_toBottomOf="@+id/recycler_markets"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/colorTransparent"
+                android:gravity="center"
+                android:src="@drawable/search2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.007" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/facebook"
+            android:id="@+id/dots_loader_search"
+            >
+
+            <ProgressBar
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="309dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="102dp"
+            android:layout_marginLeft="102dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/search" />
+
+        <com.algamil.souqelwasta.customLibraries.GridRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_505sdp"
+            android:layout_below="@+id/et_search"
+            android:id="@+id/recycler_search">
+
+        </com.algamil.souqelwasta.customLibraries.GridRecyclerView>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
